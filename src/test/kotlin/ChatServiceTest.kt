@@ -24,7 +24,7 @@ class ChatServiceTest {
             chatIdForMessages = 1,
             senderId = 1,
             recipientId = 1,
-            text = "Hakuna Matata",
+            text = "mes1",
             isRead = false
         )
 
@@ -38,7 +38,7 @@ class ChatServiceTest {
             chatIdForMessages = 2,
             senderId = 1,
             recipientId = 1,
-            text = "Love saves the world!",
+            text = "mes2",
             isRead = true
         )
         service.addChat(1, chat1)
@@ -61,7 +61,7 @@ class ChatServiceTest {
             chatIdForMessages = 1,
             senderId = 1,
             recipientId = 1,
-            text = "Hakuna Matata",
+            text = "mes1",
             isRead = false
         )
         val message2 = Message(
@@ -69,7 +69,7 @@ class ChatServiceTest {
             chatIdForMessages = 1,
             senderId = 1,
             recipientId = 1,
-            text = "Love saves the world!",
+            text = "mes2",
             isRead = false
         )
         val chat2 = Chat(
@@ -82,7 +82,7 @@ class ChatServiceTest {
             chatIdForMessages = 2,
             senderId = 1,
             recipientId = 1,
-            text = "Hakuna Matata",
+            text = "mes3",
             isRead = true
         )
         val message4 = Message(
@@ -90,7 +90,7 @@ class ChatServiceTest {
             chatIdForMessages = 2,
             senderId = 1,
             recipientId = 1,
-            text = "Love saves the world!",
+            text = "mes4",
             isRead = true
         )
         service.addChat(1, chat1)
@@ -115,7 +115,7 @@ class ChatServiceTest {
             chatIdForMessages = chat1.chatId,
             senderId = 1,
             recipientId = 1,
-            text = "Hakuna Matata",
+            text = "mes1",
             isRead = true
         )
         val message2 = Message(
@@ -123,7 +123,7 @@ class ChatServiceTest {
             chatIdForMessages = chat1.chatId,
             senderId = 1,
             recipientId = 1,
-            text = "Love saves the world!",
+            text = "mes2",
             isRead = false
         )
         val message3 = Message(
@@ -131,7 +131,7 @@ class ChatServiceTest {
             chatIdForMessages = chat1.chatId,
             senderId = 1,
             recipientId = 1,
-            text = "You can win if you want!",
+            text = "mes3",
             isRead = false
         )
 
@@ -150,7 +150,7 @@ class ChatServiceTest {
             chatIdForMessages = 1,
             senderId = 1,
             recipientId = 1,
-            text = "Hakuna Matata",
+            text = "mes1",
             isRead = false
         )
         val result = service.addMessage(1, message1)
@@ -169,7 +169,7 @@ class ChatServiceTest {
             chatIdForMessages = chat1.chatId,
             senderId = 1,
             recipientId = 1,
-            text = "Hakuna Matata",
+            text = "mes1",
             isRead = false
         )
         service.addChat(1, chat1)
@@ -200,7 +200,7 @@ class ChatServiceTest {
             chatIdForMessages = chat1.chatId,
             senderId = 1,
             recipientId = 1,
-            text = "Hakuna Matata",
+            text = "mes1",
             isRead = false
         )
         service.addChat(1, chat1)
